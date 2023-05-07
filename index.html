@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#navId" tabindex="0">
+    <header id="home">
+      <!-- The Navigation starts here.-->
+      <nav
+        id="navId"
+        class="cstnav navbar navbar-light navbar-expand-xl fixed-top shadow"
+        aria-label="Offcanvas navbar large"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand ms-2" href="#home"
+            ><img
+              src="/images/logo/mistyhomered.png"
+              width="200"
+              height="50"
+              alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar2"
+            aria-controls="offcanvasNavbar2"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end text-bg-white"
+            tabindex="-1"
+            id="offcanvasNavbar2"
+            aria-labelledby="offcanvasNavbar2Label"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbar2Label">
+                "At Your Service!!"
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-black"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#home"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#cottages">Cottages</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#testimonial">"What Guests Say"</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#location">Location</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- The carousel section starts here.-->
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="/images/mistyHomebanner/opendoor.jpg"
+              alt="..."
+              class="d-block w-100 img1"
+            />
+            <div class="container">
+              <div class="carousel-caption">
+                <p>
+                  <a class="btn btn-lg btn-primary" href="#contact">Book Now</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/images/mistyHomebanner/Honeymoon3.jpg"
+              class="d-block w-100 img2"
+              alt="..."
+            />
+
+            <div class="container">
+              <div class="carousel-caption">
+                <p>
+                  <a class="btn btn-lg btn-primary" href="#contact">Book Now</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/images/mistyHomebanner/weekend copy.jpg"
+              class="d-block w-100 img3"
+              alt="..."
+            />
+
+            <div class="container">
+              <div class="carousel-caption">
+                <p>
+                  <a class="btn btn-lg btn-primary" href="#contact">Book Now</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- The accordian section starts here.-->
+      <h1 class="text-dark text-center" id="cottages">Our Cottages</h1>
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button
+              class="accordion-button collapsed cstaccordian"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne"
+              aria-expanded="false"
+              aria-controls="flush-collapseOne"
+            >
+              Sunrise
+            </button>
+          </h2>
+          <div
+            id="flush-collapseOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <!-- The accordian body starts here.-->
+            <div class="accordion-body p-0">
+              <div class="album bg-light py-4">
+                <div class="container">
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                      <div class="card shadow-sm">
+                        <img
+                          src="/images/sunshine/sunshine1.jpg"
+                          class="card-img-top rounded d-sm-none"
+                          alt="..."
+                          width="100%"
+                        />
+                        <img
+                          src="/images/sunshine/sunshine1.jpg"
+                          class="card-img-top rounded d-none d-sm-block"
+                          alt="..."
+                          width="100%"
+                          data-bs-toggle="modal"
+                          data-bs-target="#galleryModal"
+                          data-bs-whatever="/images/sunshine/sunshine1.jpg"
+                        />
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card shadow-sm">
+                        <img
+                          src="/images/sunshine/sunshine2.jpg"
+                          class="card-img-top rounded d-sm-none"
+                          alt="..."
+                          width="100%"
+                        />
+                        <img
+                          src="/images/sunshine/sunshine2.jpg"
+                          class="card-img-top rounded d-none d-sm-block"
+                          alt="..."
+                          width="100%"
+                          data-bs-toggle="modal"
+                          data-bs-target="#galleryModal"
+                          data-bs-whatever="/images/sunshine/sunshine2.jpg"
+                        />
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card shadow-sm">
+                        <img
+                          src="/images/sunshine/sunshine3.jpg"
+                          class="card-img-top rounded d-sm-none"
+                          alt="..."
+                          width="100%"
+                        />
+                        <img
+                          src="/images/sunshine/sunshine3.jpg"
+                          class="card-img-top rounded d-none d-sm-block"
+                          alt="..."
+                          width="100%"
+                          data-bs-toggle="modal"
+                          data-bs-target="#galleryModal"
+                          data-bs-whatever="/images/sunshine/sunshine3.jpg"
+                        />
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card shadow-sm">
+                        <img
+                          src="/images/sunshine/sunshine5.jpg"
+                          class="card-img-top rounded d-sm-none"
+                          alt="..."
+                          width="100%"
+                        />
+                        <img
+                          src="/images/sunshine/sunshine5.jpg"
+                          class="card-img-top rounded d-none d-sm-block"
+                          alt="..."
+                          width="100%"
+                          data-bs-toggle="modal"
+                          data-bs-target="#galleryModal"
+                          data-bs-whatever="/images/sunshine/sunshine5.jpg"
+                        />
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card shadow-sm">
+                        <img
+                          src="/images/sunshine/sunshine6.jpg"
+                          class="card-img-top rounded d-sm-none"
+                          alt="..."
+                          width="100%"
+                        />
+                        <img
+                          src="/images/sunshine/sunshine6.jpg"
+                          class="card-img-top rounded d-none d-sm-block"
+                          alt="..."
+                          width="100%"
+                          data-bs-toggle="modal"
+                          data-bs-target="#galleryModal"
+                          data-bs-whatever="/images/sunshine/sunshine6.jpg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button
+              class="accordion-button collapsed cstaccordian"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo"
+              aria-expanded="false"
+              aria-controls="flush-collapseTwo"
+            >
+              Star Light
+            </button>
+          </h2>
+          <div
+            id="flush-collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body p-0">
+              <div class="album bg-light py-4">
+                <div class="container">
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                      <div class="card shadow-sm">
+                        <img
+                          src="/images/starlight/starlight1.jpg"
+                          class="card-img-top rounded d-sm-none"
+                          alt="..."
+                          width="100%"
+                        />
+                        <img
+                          src="/images/starlight/starlight1.jpg"
+                          class="card-img-top rounded d-none d-sm-block"
+                          alt="..."
+                          width="100%"
+                          data-bs-toggle="modal"
+                          data-bs-target="#galleryModal"
+                          data-bs-whatever="/images/starlight/starlight1.jpg"
+                        />
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card shadow-sm">
+                        <img
+                          src="/images/starlight/starlight2.jpg"
+                          class="card-img-top rounded d-sm-none"
+                          alt="..."
+                          width="100%"
+                        />
+                        <img
+                          src="/images/starlight/starlight2.jpg"
+                          class="card-img-top rounded d-none d-sm-block"
+                          alt="..."
+                          width="100%"
+                          data-bs-toggle="modal"
+                          data-bs-target="#galleryModal"
+                          data-bs-whatever="/images/starlight/starlight2.jpg"
+                        />
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card shadow-sm">
+                        <img
+                          src="/images/starlight/starlight3.jpg"
+                          class="card-img-top rounded d-sm-none"
+                          alt="..."
+                          width="100%"
+                        />
+                        <img
+                          src="/images/starlight/starlight3.jpg"
+                          class="card-img-top rounded d-none d-sm-block"
+                          alt="..."
+                          width="100%"
+                          data-bs-toggle="modal"
+                          data-bs-target="#galleryModal"
+                          data-bs-whatever="/images/starlight/starlight3.jpg"
+                        />
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card shadow-sm">
+                        <img
+                          src="/images/starlight/starlight4.jpg"
+                          class="card-img-top rounded d-sm-none"
+                          alt="..."
+                          width="100%"
+                        />
+                        <img
+                          src="/images/starlight/starlight4.jpg"
+                          class="card-img-top rounded d-none d-sm-block"
+                          alt="..."
+                          width="100%"
+                          data-bs-toggle="modal"
+                          data-bs-target="#galleryModal"
+                          data-bs-whatever="/images/starlight/starlight4.jpg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button
+              class="accordion-button collapsed cstaccordian"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree"
+              aria-expanded="false"
+              aria-controls="flush-collapseThree"
+            >
+              Cool Breez
+            </button>
+          </h2>
+          <div
+            id="flush-collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingThree"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body p-0">
+              <div class="album bg-light py-4">
+                <div class="container">
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                      <div class="card shadow-sm">
+                        <img
+                          src="/images/coolbreeze/coolbreeze1.jpg"
+                          class="card-img-top rounded d-sm-none"
+                          alt="..."
+                          width="100%"
+                        />
+                        <img
+                          src="/images/coolbreeze/coolbreeze1.jpg"
+                          class="card-img-top rounded d-none d-sm-block"
+                          alt="..."
+                          width="100%"
+                          data-bs-toggle="modal"
+                          data-bs-target="#galleryModal"
+                          data-bs-whatever="/images/coolbreeze/coolbreeze1.jpg"
+                        />
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card shadow-sm">
+                        <img
+                          src="/images/coolbreeze/coolbreeze2.jpg"
+                          class="card-img-top rounded d-sm-none"
+                          alt="..."
+                          width="100%"
+                        />
+                        <img
+                          src="/images/coolbreeze/coolbreeze2.jpg"
+                          class="card-img-top rounded d-none d-sm-block"
+                          alt="..."
+                          width="100%"
+                          data-bs-toggle="modal"
+                          data-bs-target="#galleryModal"
+                          data-bs-whatever="/images/coolbreeze/coolbreeze2.jpg"
+                        />
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card shadow-sm">
+                        <img
+                          src="/images/coolbreeze/coolbreeze3.jpg"
+                          class="card-img-top rounded d-sm-none"
+                          alt="..."
+                          width="100%"
+                        />
+                        <img
+                          src="/images/coolbreeze/coolbreeze3.jpg"
+                          class="card-img-top rounded d-none d-sm-block"
+                          alt="..."
+                          width="100%"
+                          data-bs-toggle="modal"
+                          data-bs-target="#galleryModal"
+                          data-bs-whatever="/images/coolbreeze/coolbreeze3.jpg"
+                        />
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card shadow-sm">
+                        <img
+                          src="/images/coolbreeze/coolbreeze4.jpg"
+                          class="card-img-top rounded d-sm-none"
+                          alt="..."
+                          width="100%"
+                        />
+                        <img
+                          src="/images/coolbreeze/coolbreeze4.jpg"
+                          class="card-img-top rounded d-none d-sm-block"
+                          alt="..."
+                          width="100%"
+                          data-bs-toggle="modal"
+                          data-bs-target="#galleryModal"
+                          data-bs-whatever="/images/coolbreeze/coolbreeze4.jpg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Accordian Ends -->
+
+      <!-- Modal -->
+      <div class="modal fade" id="galleryModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content bg-light">
+            <div class="modal-body">
+              <img width="100%" class="cstmodalimage" />
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal end -->
+
+      <!-- Feature section starts here -->
+      <div class="container-fluid px-4 py-3 cstgrey" id="icon-grid">
+        <h1 class="text-dark text-center my-4" id="features">Features</h1>
+        <div
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-4"
+        >
+          <div class="col d-flex align-items-start">
+            <div
+              class="icon-square text-bg-primary text-white d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
+            >
+              <i class="bi bi-car-front-fill" style="font-size: 28px"></i>
+            </div>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4">Car Parking</h3>
+              <p>
+                Ample amount of parking space in front of the cottages, to
+                accomodate medium to large size vehicle.
+              </p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div
+              class="icon-square text-bg-primary text-white d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
+            >
+              <i class="bi bi-cup-hot-fill" style="font-size: 28px"></i>
+            </div>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4">Kitchen</h3>
+              <p>
+                Cottages come with attached Kitchen. Guests can use them to
+                prepare meals. Extra charges for gas,vessels,cook.
+              </p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div
+              class="icon-square text-bg-primary text-white d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
+            >
+              <i class="bi bi-tv" style="font-size: 28px"></i>
+            </div>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4">Hall</h3>
+              <p>
+                A Common Hall is available in all the cottages, apart from the
+                rooms. With tv, chair and sofa.
+              </p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div
+              class="icon-square text-bg-primary text-white d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
+            >
+              <img src="/images/icons/dogicon.png" width="40px" height="40px" />
+            </div>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4">Pet Friendly</h3>
+              <p>
+                We are pet Friendly. Damage to property by pet, has to be
+                compensated by the owners.
+              </p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div
+              class="icon-square text-bg-primary text-white d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
+            >
+              <i class="bi bi-fire" style="font-size: 28px"></i>
+            </div>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4">Bonfire</h3>
+              <p>
+                Bonfire can be arranged in front of the cottages at night, to
+                warm up and have fun. Extra charges applicable.
+              </p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div
+              class="icon-square text-bg-primary text-white d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
+            >
+              <i class="bi bi-alarm-fill" style="font-size: 28px"></i>
+            </div>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4">24*7 Assistance</h3>
+              <p>
+                Room boys will be available at all time for your assistance.
+              </p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div
+              class="icon-square text-bg-primary text-white d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
+            >
+              <i class="bi bi-geo-alt-fill" style="font-size: 28px"></i>
+            </div>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4">Location</h3>
+              <p>
+                Located in the right palce. Just at the enterance of ooty (free
+                from town traffic) and near by to popular attractions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Feature section ends here -->
+      <!--Reviews section ends here -->
+      <div class="container-fluid">
+        <h1 class="text-dark text-center my-5" id="testimonial">
+          "What Guests Say"
+        </h1>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2 mb-4">
+          <div class="col">
+            <!--First column starts here -->
+            <div class="card mb-2">
+              <div class="card-header d-flex flex-row justify-content-between">
+                <div class="d-flex flex-row align-items-center">
+                  <img
+                    src="/images/icons/googlelogo.png"
+                    width="30px"
+                    height="30px"
+                  />
+                  <p class="m-2 ps-1">Surya Dedeepya Chinta</p>
+                </div>
+                <div class="d-flex flex-row align-items-center">
+                  <i
+                    class="bi bi-star-fill text-warning"
+                    style="font-size: 20px"
+                  ></i>
+                  <h6 class="m-2">5/5</h6>
+                </div>
+              </div>
+              <div class="card-body">
+                Loved this place. Best place to stay. Good service. Worth for
+                money.
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header d-flex flex-row justify-content-between">
+                <div class="d-flex flex-row align-items-center">
+                  <img
+                    src="/images/icons/googlelogo.png"
+                    width="30px"
+                    height="30px"
+                  />
+                  <p class="m-2 ps-1">Tousif Khan</p>
+                </div>
+                <div class="d-flex flex-row align-items-center">
+                  <i
+                    class="bi bi-star-fill text-warning"
+                    style="font-size: 20px"
+                  ></i>
+                  <h6 class="m-2">5/5</h6>
+                </div>
+              </div>
+              <div class="card-body">
+                Excellent cheap and best and cottage owner sasi Narayan is very
+                friendly and very good person I want to visit one more time to
+                ooty and misty home stay lovely cottage
+              </div>
+            </div>
+          </div>
+          <!--Second column starts here -->
+          <div class="col">
+            <div class="card mb-2">
+              <div class="card-header d-flex flex-row justify-content-between">
+                <div class="d-flex flex-row align-items-center">
+                  <img
+                    src="/images/icons/googlelogo.png"
+                    width="30px"
+                    height="30px"
+                  />
+                  <p class="m-2 ps-1">Naveen kumar</p>
+                </div>
+                <div class="d-flex flex-row align-items-center">
+                  <i
+                    class="bi bi-star-fill text-warning"
+                    style="font-size: 20px"
+                  ></i>
+                  <h6 class="m-2">5/5</h6>
+                </div>
+              </div>
+              <div class="card-body">
+                Nice place to stay with affordable cost in ooty ... Sasi sir and
+                santhosh treat us well.. thank you both for happy stay😊👍
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header d-flex flex-row justify-content-between">
+                <div class="d-flex flex-row align-items-center">
+                  <img
+                    src="/images/icons/googlelogo.png"
+                    width="30px"
+                    height="30px"
+                  />
+                  <p class="m-2 ps-1">Kiran Prasath</p>
+                </div>
+                <div class="d-flex flex-row align-items-center">
+                  <i
+                    class="bi bi-star-fill text-warning"
+                    style="font-size: 20px"
+                  ></i>
+                  <h6 class="m-2">5/5</h6>
+                </div>
+              </div>
+              <div class="card-body">
+                Locality is away from city with Peace .Bachelor's stay was
+                Awesome on Budget. They also have Family stay cottages.You can
+                try this cottage for hospitality also.
+              </div>
+            </div>
+          </div>
+          <!--Third column starts here -->
+          <div class="col">
+            <div class="card mb-2">
+              <div class="card-header d-flex flex-row justify-content-between">
+                <div class="d-flex flex-row align-items-center">
+                  <img
+                    src="/images/icons/googlelogo.png"
+                    width="30px"
+                    height="30px"
+                  />
+                  <p class="m-2 ps-1">Jijo Thomas</p>
+                </div>
+                <div class="d-flex flex-row align-items-center">
+                  <i
+                    class="bi bi-star-fill text-warning"
+                    style="font-size: 20px"
+                  ></i>
+                  <h6 class="m-2">5/5</h6>
+                </div>
+              </div>
+              <div class="card-body">
+                Good service. If you are going to ooty you can stay in this
+                place it is So peaceful place.
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header d-flex flex-row justify-content-between">
+                <div class="d-flex flex-row align-items-center">
+                  <img
+                    src="/images/icons/googlelogo.png"
+                    width="30px"
+                    height="30px"
+                  />
+                  <p class="m-2 ps-1">Anuradha S</p>
+                </div>
+                <div class="d-flex flex-row align-items-center">
+                  <i
+                    class="bi bi-star-fill text-warning"
+                    style="font-size: 20px"
+                  ></i>
+                  <h6 class="m-2">5/5</h6>
+                </div>
+              </div>
+              <div class="card-body">Hospitality was very good.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--About Us starts here -->
+      <div class="container-fluid clearfix cstgrey p-4">
+        <h1 class="text-dark text-center my-4" id="about">About Us</h1>
+        <div class="container">
+          <img
+            src="/images/sasi.png"
+            class="rounded float-sm-start me-3 mb-3 shadow"
+            height="200px"
+            width="200px"
+            ;
+          />
+          <p>
+            <strong>Misty Home Cottages -</strong> has been serving guests for
+            almost a <strong>decade</strong> now. Started as a single cottage
+            and grow to three cottages under its name. It’s evident that Misty
+            Home couldn’t have achieved such a mile stone without the support of
+            our valuable customers.
+          </p>
+
+          <p>
+            <strong>Sasinarayanan -</strong> An assertive, jovial and
+            hardworking entrepreneur.
+          </p>
+          <p>
+            Started his entrepreneurial journey, by taking over his father
+            <strong>Clothes Shop</strong> (family business) at
+            Gobichettipalayam. After successfully running his family business
+            for sometime, as a next step co-founded
+            <strong>IEG Computer Education</strong>
+            (Affiliated to Bharathiar University Distance Education) along with
+            his friend Mr.Kathikayan.
+          </p>
+
+          <p>
+            <strong>Misty Home Cottages</strong> – Since his better half Mrs
+            Hema Sasinarayanan agriculture officer was posted to Ooty, he
+            shifted there along with his family. Eventually he was entitled with
+            the responsibility of guiding friends and relatives who come up to
+            tour Ooty.This brought forward the vacant space and various
+            opportunities in the hospitality industry at Ooty, which sparked an
+            idea to start Misty Home Cottage, now Cottages.
+          </p>
+
+          <p>
+            <strong
+              >“Thank you for choosing Misty Home for your stay at Ooty. Guest’s
+              satisfaction is our priority. Looking forward to welcoming you
+              again.”</strong
+            >
+          </p>
+        </div>
+      </div>
+      <!--Contact US starts here -->
+      <div class="container-fluid text-center">
+        <h1 class="text-dark my-5" id="location">Location</h1>
+      </div>
+      <!--Google map-->
+      <div
+        id="map-container-google-2"
+        class="z-depth-1-half map-container-2"
+        style="height: 500px"
+      >
+        <iframe
+          src="https://maps.google.com/maps?q=chicago&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="container-fluid text-center py-2">
+        <h1 class="text-dark my-4" id="contact">Contact Us</h1>
+        <div class="container shadow mb-4">
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <img src="/images/icons/5124556.jpg" width="100%" alt="" />
+            </div>
+            <div
+              class="col d-flex flex-column justify-content-center px-5 pb-5"
+            >
+              <div class="d-flex flex-row align-items-center">
+                <i class="bi bi-person text-dark" style="font-size: 40px"></i>
+                <h2 class="m-3">Sasinarayanan</h2>
+              </div>
+              <div class="d-flex flex-row">
+                <i
+                  class="bi bi-phone-vibrate text-dark"
+                  style="font-size: 40px"
+                ></i>
+                <h5 class="m-3">7834629876</h5>
+              </div>
+              <div class="d-flex flex-row">
+                <i
+                  class="bi bi-phone-vibrate text-dark"
+                  style="font-size: 40px"
+                ></i>
+                <h5 class="m-3">8765398756</h5>
+              </div>
+              <div class="d-flex flex-row">
+                <i class="bi bi-whatsapp text-dark" style="font-size: 40px"></i>
+                <h5 class="m-3">8765398756</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Google Maps-->
+    </main>
+    <footer
+      class="container-fluid cstgrey d-flex flex-row justify-content-center align-items-center p-2 border-top border-secondary border-3"
+    >
+      <i class="bi bi-house-door-fill d-inline m-2" style="font-size: 40px"></i>
+      <h5 class="text-dark my-4 d-inline">"Thank you for Visiting"</h5>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+      integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+      integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/modelGallery.js"></script>
+  </body>
+</html>
