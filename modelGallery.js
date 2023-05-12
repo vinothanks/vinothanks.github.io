@@ -12,3 +12,10 @@ galleryModel.addEventListener('show.bs.modal', function (event) {
   var modalBodyInput = galleryModal.querySelector('.modal-body img');
   modalBodyInput.src = imagesrc;
 })
+
+function close_offcanvas() {
+  setTimeout(clickButton, 500);
+}
+function clickButton(){
+  document.getElementById("closeMenu").click();
+}
