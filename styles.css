@@ -8,7 +8,7 @@ body {
   /*................Styles for Navbar........*/
 
   .navbar{
-    background-color: white;
+    background-color: rgb(236, 196, 36);
     font-size: 18px;
   }
   .navbar-toggler{
@@ -20,13 +20,16 @@ body {
     box-shadow:none;
   }
   .active{
-    color: #D62335  !important;
+    color: rgb(13,110,253)  !important;
     text-decoration: underline;
   }
   @media (max-width: 992px) {
     .navbar li{
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid rgb(13,110,253);
     }
+  }
+  .offcanvas{
+    background-color: rgb(236, 196, 36) !important;
   }
   /*................Styles for Carousel........*/
 
@@ -63,19 +66,21 @@ body {
   {
     font-weight: bold;
     font-size: large;
+    color: rgb(13,110,253);
   }
   .accordion-button:focus{
      box-shadow: none;
   }
   .accordion-button:not(.collapsed) {
     color: black  !important;
-    background-color: lightgray !important;
+    background-color: rgb(236, 196, 36) !important;
   }
   .accordion-body{
-    background-image: url("/images/logo/gallerybgdark.jpg");
+    background-color: white;
   }
   .accordion-body img{
-    border: 2px solid white;
+    border: 5px solid black;
+    
   }
   .modal-footer .btn{
     border-radius: 10px;
@@ -96,29 +101,35 @@ body {
     border-radius: .75rem;
   }
   #icon-grid{
-    background-image: linear-gradient(to left bottom, #e78686, #d4869e, #b989ab, #9e8cac, #8b8da2, #8b8da2, #8b8da2, #8b8da2, #9e8cac, #b989ab, #d4869e, #e78686);
+    background-color:rgb(244, 244, 244);
     color: black;
   }
   #icon-grid p{
     font-size: 18px;
-    color: rgb(244, 244, 244);
+    color: black;
   }
 
   /*------About Us--------*/
 
   .aboutus{
-    background-color: rgb(236,196,36);
+    background-color: rgb(236, 196, 36);
     padding: 10px;
     padding-bottom: 50px;
+  }
+  .aboutus h1{
+    color: #3274b5;
   }
   .aboutus p{
     font-size: 18px;
   }
   .aboutus img{
-    border: 2px solid lightgray;
+    border: 2px solid black;
     border-radius: 10px;
     margin-right: 20px;
     margin-bottom: 20px;
+  }
+  .strong{
+    color: black; 
   }
    /*------Google Map--------*/
 
@@ -140,6 +151,9 @@ body {
     padding: 0px;
     border-radius: 10px;
   }
+  .mapsection{
+    background-color: rgb(244, 244, 244);
+  }
   
   /*------Contact Us--------*/
 
@@ -149,18 +163,18 @@ body {
   .name{
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
-    color: #D92A3D;
+    color: black;
   }
   .mobile{
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 21px;
-    color: #D92A3D;
+    color: black;
   }
    /* ------- Footer-------*/
 
    .footer{
-    background-image: linear-gradient(to left bottom, #e78686, #d4869e, #b989ab, #9e8cac, #8b8da2, #8b8da2, #8b8da2, #8b8da2, #9e8cac, #b989ab, #d4869e, #e78686);
-    color: white;
+    background-color: rgb(236, 196, 36);
+    color: black;
     margin-top: 30px; 
   }
   
