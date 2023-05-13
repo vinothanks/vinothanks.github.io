@@ -1,4 +1,7 @@
 /*.........Styles for body..........*/
+:root{
+  --primaryColor:#E8AF30;
+}
 body {
     padding-top: 3rem;
     /*font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
@@ -8,7 +11,7 @@ body {
   /*................Styles for Navbar........*/
 
   .navbar{
-    background-color: rgb(255,215,0);
+    background-color: var(--primaryColor);
     font-size: 18px;
   }
   .navbar-toggler{
@@ -29,7 +32,7 @@ body {
     }
   }
   .offcanvas{
-    background-color: rgb(236, 196, 36) !important;
+    background-color: var(--primaryColor) !important;
   }
   /*................Styles for Carousel........*/
 
@@ -73,7 +76,7 @@ body {
   }
   .accordion-button:not(.collapsed) {
     color: black  !important;
-    background-color: rgb(236, 196, 36) !important;
+    background-color: var(--primaryColor) !important;
   }
   .accordion-body{
     background-color: white;
@@ -112,7 +115,7 @@ body {
   /*------About Us--------*/
 
   .aboutus{
-    background-color: rgb(255,215,0);
+    background-color: var(--primaryColor);
     padding: 10px;
     padding-bottom: 50px;
   }
@@ -173,7 +176,7 @@ body {
    /* ------- Footer-------*/
 
    .footer{
-    background-color: rgb(236, 196, 36);
+    background-color: var(--primaryColor);
     color: black;
     margin-top: 30px; 
   }
