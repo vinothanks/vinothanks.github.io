@@ -166,6 +166,7 @@ body {
   .contactus{
     border-radius: 10px;
     background-color: white;
+    margin-bottom: 30px;
   }
   .name{
     font-family:Georgia, 'Times New Roman', Times, serif;
