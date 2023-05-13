@@ -115,7 +115,7 @@ body {
   /*------About Us--------*/
 
   .aboutus{
-    background-color: var(--primaryColor);
+    background-color: rgb(244, 244, 244);
     padding: 10px;
     padding-bottom: 50px;
   }
@@ -155,13 +155,17 @@ body {
     border-radius: 10px;
   }
   .mapsection{
-    background-color: rgb(244, 244, 244);
+    background-color: white;
   }
   
   /*------Contact Us--------*/
-
+  
+  .contactbgcolor{
+    background-color: rgb(244, 244, 244);
+  }
   .contactus{
     border-radius: 10px;
+    background-color: white;
   }
   .name{
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -178,6 +182,5 @@ body {
    .footer{
     background-color: var(--primaryColor);
     color: black;
-    margin-top: 30px; 
   }
   
