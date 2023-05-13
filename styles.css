@@ -8,7 +8,7 @@ body {
   /*................Styles for Navbar........*/
 
   .navbar{
-    background-color: #bdd31d;
+    background-color: rgb(255,215,0);
     font-size: 18px;
   }
   .navbar-toggler{
