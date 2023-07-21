@@ -1,6 +1,6 @@
 /*.........Styles for body..........*/
 :root{
-  --primaryColor: rgb(255,255,255);
+  --primaryColor: rgb(255,215,0);
 }
 body {
     padding-top: 3rem;
