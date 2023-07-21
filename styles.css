@@ -1,6 +1,6 @@
 /*.........Styles for body..........*/
 :root{
-  --primaryColor: rgb(255,215,0);
+  --primaryColor: rgb(255,255,255);
 }
 body {
     padding-top: 3rem;
@@ -34,6 +34,7 @@ body {
   .offcanvas{
     background-color: var(--primaryColor) !important;
   }
+
   /*................Styles for Carousel........*/
 
   .carousel {
@@ -119,9 +120,6 @@ body {
     padding: 10px;
     padding-bottom: 50px;
   }
-  .aboutus h1{
-    color: #3274b5;
-  }
   .aboutus p{
     font-size: 18px;
   }
@@ -131,9 +129,7 @@ body {
     margin-right: 20px;
     margin-bottom: 20px;
   }
-  .strong{
-    color: black; 
-  }
+
    /*------Google Map--------*/
 
   .map-container-2{
@@ -178,7 +174,8 @@ body {
     font-size: 21px;
     color: black;
   }
-   /* ------- Footer-------*/
+  
+  /* ------- Footer-------*/
 
    .footer{
     background-color: var(--primaryColor);
