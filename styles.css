@@ -1,18 +1,32 @@
 /*.........Styles for body..........*/
+@font-face {
+  font-family: Poor Richard;
+  src: url(PoorRichard.ttf);
+}
 :root{
-  --primaryColor: rgb(255,255,255);
+  --primaryColor: rgb(255, 255, 255);
+}
+.tred{
+  background-color: rgb(184,29,19);
+}
+.tredfont{
+  color: rgb(184,29,19);
 }
 body {
     padding-top: 3rem;
     /*font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
     position: relative !important;
   }
-  
+  h1{
+    font-family: Poor Richard;
+    font-size: 40px;
+  }
   /*................Styles for Navbar........*/
 
   .navbar{
     background-color: var(--primaryColor);
-    font-size: 18px;
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
   .navbar-toggler{
     border: none !important;
@@ -23,16 +37,16 @@ body {
     box-shadow:none;
   }
   .active{
-    color: rgb(13,110,253)  !important;
+    color: rgb(184,29,19)  !important;
     text-decoration: underline;
   }
   @media (max-width: 992px) {
     .navbar li{
-    border-bottom: 1px solid rgb(13,110,253);
+    border-bottom: 1px solid rgb(184,29,19);
     }
   }
   .offcanvas{
-    background-color: var(--primaryColor) !important;
+    background-color: #f4f4f4;
   }
 
   /*................Styles for Carousel........*/
@@ -61,23 +75,24 @@ body {
   }
   .nextPrevIcon{
     font-size: 40px;
-    color: lightblue;
+    color: rgb(184,29,19);
   }
 
   /*................Style for Accordian........*/
 
   .accordion-button
   {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
-    font-size: large;
-    color: rgb(13,110,253);
+    font-size: 21.5px;
+    color: rgb(184,29,19);
   }
   .accordion-button:focus{
      box-shadow: none;
   }
   .accordion-button:not(.collapsed) {
-    color: black  !important;
-    background-color: var(--primaryColor) !important;
+    color: Black  !important;
+    background-color: lightgrey !important;
   }
   .accordion-body{
     background-color: white;
@@ -109,7 +124,11 @@ body {
     color: black;
   }
   #icon-grid p{
-    font-size: 18px;
+    font-size: 16px;
+    color: black;
+  }
+  #icon-grid h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: black;
   }
 
@@ -165,12 +184,12 @@ body {
     margin-bottom: 20px;
   }
   .name{
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 30px;
     color: black;
   }
   .mobile{
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 21px;
     color: black;
   }
