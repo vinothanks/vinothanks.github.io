@@ -42,7 +42,7 @@ body {
   }
   @media (max-width: 992px) {
     .navbar li{
-    border-bottom: 1px solid rgb(184,29,19);
+    border-bottom: 1px solid black;
     }
   }
   .offcanvas{
@@ -65,13 +65,17 @@ body {
       content:url("/images/mistyHomebanner/beermobile1.jpg");
     }
   }
-  .carousel-caption .btn-primary{
+  .carousel-caption .btn-booknow{
     border-radius: 10px;
     border: none;
     transition: 0.5s;
+    font-family: Poor Richard;
+    color: white;
   }
-  .carousel-caption .btn-primary:hover{
+  .carousel-caption .btn-booknow:hover{
     transform: translatey(-5px);
+    background-color:#f4f4f4;
+    color: black;
   }
   .nextPrevIcon{
     font-size: 40px;
