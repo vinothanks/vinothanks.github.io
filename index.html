@@ -22,12 +22,12 @@
     data-bs-target="#navId"
     tabindex="0"
   >
-    <header id="home">
+    <header class="fixed-top shadow">
       <!-- The Navigation starts here.-->
       <!-- id="navId" used for "scroll spy" component in <body> -->
       <nav
         id="navId"
-        class="navbar navbar-expand-xl fixed-top shadow"
+        class="navbar navbar-expand-xl"
         aria-label="Offcanvas navbar large"
       >
         <div class="container-fluid">
@@ -129,10 +129,13 @@
           </div>
         </div>
       </nav>
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
     </header>
     <!-- The Header and Navigation section Ends here.-->
 
-    <main>
+    <main id="home">
       <!-- The carousel section starts here.-->
       <section>
         <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -189,7 +192,7 @@
             </div>
             <div class="carousel-item">
               <img
-                src="/images/mistyHomebanner/weekend copy.jpg"
+                src="/images/mistyHomebanner/weekend.jpg"
                 class="d-block w-100 img3"
                 alt="Weekend Beer party image"
               />
@@ -242,7 +245,7 @@
                 aria-expanded="false"
                 aria-controls="flush-collapseOne"
               >
-                Sunrise
+                C1-2BHK-6 Person Max
               </button>
             </h2>
             <div
@@ -368,7 +371,7 @@
                 aria-expanded="false"
                 aria-controls="flush-collapseTwo"
               >
-                Star Light
+                C2-2BH-6 Person Max
               </button>
             </h2>
             <div
@@ -474,7 +477,7 @@
                 aria-expanded="false"
                 aria-controls="flush-collapseThree"
               >
-                Cool Breez
+                C3-1BHK-4 Person Max
               </button>
             </h2>
             <div
@@ -623,8 +626,8 @@
             <div>
               <h3 class="fw-bold mb-0 fs-4">Kitchen</h3>
               <p>
-                Cottages come with attached Kitchen. Guests can use them to
-                prepare meals. Extra charges for gas,vessels,cook.
+                Cottages (C1,C3) come with attached Kitchen. Guests can use them
+                to prepare meals. *Extra charges applicable.
               </p>
             </div>
           </div>
@@ -637,8 +640,8 @@
             <div>
               <h3 class="fw-bold mb-0 fs-4">Hall</h3>
               <p>
-                A Common Hall is available in all the cottages, apart from the
-                rooms. With tv, chair and sofa.
+                A Common Hall (With TV, Chairs and Sofa) is available in all the
+                cottages.
               </p>
             </div>
           </div>
@@ -653,7 +656,7 @@
               <h3 class="fw-bold mb-0 fs-4">Bonfire</h3>
               <p>
                 Bonfire can be arranged in front of the cottages at night, to
-                warm up and have fun. Extra charges applicable.
+                warm up and have fun. *Extra charges applicable.
               </p>
             </div>
           </div>
@@ -676,13 +679,29 @@
             <div
               class="icon-square tred text-white d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
             >
+              <i class="bi bi-inbox-fill" style="font-size: 28px"></i>
+            </div>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4">3 Person Cot</h3>
+              <p>All rooms have 3 person cot(can accommodate 3 person).</p>
+            </div>
+          </div>
+
+          <div class="col d-flex align-items-start">
+            <div
+              class="icon-square tred text-white d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
+            >
               <i class="bi bi-geo-alt-fill" style="font-size: 28px"></i>
             </div>
             <div>
               <h3 class="fw-bold mb-0 fs-4">Location</h3>
               <p>
                 Located in the right palce. Just at the enterance of ooty (free
-                from town traffic) and near by to popular attractions.
+                from town traffic) and near by to popular attractions.<br /><a
+                  href="https://goo.gl/maps/LqsQ7r6ruvrxKr3CA"
+                >
+                  View on Map</a
+                >
               </p>
             </div>
           </div>
@@ -877,9 +896,11 @@
             <strong class="strong">Clothes Shop</strong> (family business) at
             Gobichettipalayam. After successfully running his family business
             for sometime, as a next step co-founded
-            <strong class="strong">IEG Computer Education</strong>
-            (Affiliated to Bharathiar University Distance Education) along with
-            his friend Mr.Kathikayan.
+            <strong class="strong"
+              >IEG Computer Education & Bharathiar University Study Centre for
+              Distance Education in all UG and PG Courses</strong
+            >
+            along with his friend Mr.Kathikayan.
           </p>
 
           <p>
@@ -943,18 +964,23 @@
                   class="bi bi-phone-vibrate text-dark"
                   style="font-size: 40px"
                 ></i>
-                <p class="m-3 mobile">7834629876</p>
+                <p class="m-3 mobile">99424 11675</p>
               </div>
               <div class="d-flex flex-row">
                 <i
                   class="bi bi-phone-vibrate text-dark"
                   style="font-size: 40px"
                 ></i>
-                <p class="m-3 mobile">8765398756</p>
+                <p class="m-3 mobile">70106 16279</p>
               </div>
               <div class="d-flex flex-row">
-                <i class="bi bi-whatsapp text-dark" style="font-size: 40px"></i>
-                <p class="m-3 mobile">8765398756</p>
+                <i class="bi bi-geo-alt" style="font-size: 40px"></i>
+                <p class="m-3 mobile text-start">
+                  Near Funcity Belmount, Love Dale Junction
+                  <a href="https://goo.gl/maps/LqsQ7r6ruvrxKr3CA">
+                    View on Map</a
+                  >
+                </p>
               </div>
             </div>
           </div>
